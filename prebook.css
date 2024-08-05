@@ -1,0 +1,275 @@
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    color: #EDEDED;
+    background-color: #2C2A2A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    margin-top: 650px;
+    max-width: 600px;
+    width: 100%;
+    padding: 40px;
+    background-color: #373737;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #F9ED32;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #EDEDED;
+    border-radius: 5px;
+    background-color: #2C2A2A;
+    color: #EDEDED;
+    box-sizing: border-box;
+}
+
+input::placeholder {
+    color: #EDEDED;
+}
+
+.form-group-half {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-group-half .form-group {
+    width: 48%;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #2C2A2A;
+    background-color: #F9ED32;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #FFF225;
+    transform: scale(1.05);
+}
+
+.payment-icons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.payment-icons img {
+    width: 50px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.payment-icons img:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    label {
+        font-size: 1em;
+    }
+
+    .submit-btn {
+        padding: 10px;
+        font-size: 1em;
+    }
+
+    .payment-icons img {
+        width: 40px;
+        margin: 0 5px;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* menu */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    min-height: 100vh;
+}
+
+header img{
+    width: 250px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: black;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    padding: 0px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+header .navbar ul{
+    list-style: none;
+}
+
+header .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+header .navbar ul li a{
+font-size: 20px;
+padding: 20px;
+color: white;
+display: block;
+}
+
+header .navbar ul li a:hover{
+    /* background-color: #333; */
+    background-color: #F9ED32;
+    color: black;
+}
+
+header .navbar ul li ul{
+    position: absolute;
+    left: 0;
+    width: 200px;
+    /* background: #fff; */
+    background: black;
+    display: none;
+}
+
+header .navbar ul li ul li{
+    width: 100%;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+
+header .navbar ul li:hover > ul{
+ display: initial;
+}
+
+#menu-bar {
+    display: none;
+}
+
+header label {
+    font-size: 30px;
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+    display: none;
+}
+
+i{
+    font-size: 20px;
+    text-align: center;
+}
+
+@media(max-width:991px){
+    header {
+        padding: 10px;
+    }
+
+    header label{
+        display: initial;
+    }
+
+    header .navbar {
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: #fff;
+        border-top: 1px solid rgba(0,0,0,.1);
+        display: none;
+    }
+    
+    header .navbar ul li{
+        width: 100%;
+    }
+
+    header .navbar ul li ul{
+        position: relative;
+        width: 100%;
+    }
+
+    header .navbar ul li ul li{
+        /* background: #333; */
+        background: black;
+    }
+
+    #menu-bar:checked ~ .navbar{
+       display: initial;
+       /* background: rgb(31, 29, 29); */
+       background: black;
+    }
+}
+
+i{
+    font-size: 35px;
+    color: white;
+}
+
+.social {
+    display: inline-block;
+    font-size: 2px;
+    padding: 8px;
+    margin-top: 8px;
+    margin-left: 10px;
+}
