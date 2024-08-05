@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre-Book Now - Rhyno EV</title>
+    <link rel="stylesheet" href="prebook.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Poppins:400,700&display=swap">
+    <!-- <link rel="stylesheet" href="prebook.css"> -->
+</head>
+<body>
+
+    <header>
+        <!-- <a href="#" class="logo">LOGO</a> -->
+         <img src="menulogo.jpeg">
+
+         <input type="checkbox" id="menu-bar">
+         <label for="menu-bar">Menu</label>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="About Us.html">ABOUT US</a></li>
+                <li><a href="#">PRODUCTS +</a>
+                <ul>
+                    <li><a href="SE03 Lite.html">SE03 Lite</a>
+                        <li><a href="SE03.html">SE03</a>
+                            <li><a href="SE03 Max.html">SE03 Max</a>
+                                <li><a href="comparison.html">Compare All</a>
+                </ul></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+                <li><a href="prebook.html">PRE-BOOK NOW</a></li>
+                <!-- <div class="social">
+               <i class="fa-brands fa-instagram"></i></li>
+            </div>
+            <div class="social">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>  -->
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="container">
+        <h1>Pre-Book Now</h1>
+        <form>
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address" placeholder="Enter your address" required>
+            </div>
+            <div class="form-group">
+                <label for="model">Select Model</label>
+                <select id="model" name="model" required>
+                    <option value="">Choose a model</option>
+                    <option value="model1">Model 1</option>
+                    <option value="model2">Model 2</option>
+                    <option value="model3">Model 3</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="card">Credit Card Number</label>
+                <input type="text" id="card" name="card" placeholder="Enter your credit card number" required>
+            </div>
+            <div class="form-group-half">
+                <div class="form-group">
+                    <label for="expiry">Expiry Date</label>
+                    <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required>
+                </div>
+                <div class="form-group">
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" name="cvv" placeholder="CVV" required>
+                </div>
+            </div>
+            <button type="submit" class="submit-btn">Pre-Book Now</button>
+        </form>
+        <div class="payment-icons">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="Visa">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png" alt="MasterCard">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/PayPal_logo.svg" alt="PayPal">
+        </div>
+    </div>
+</body>
+</html>
