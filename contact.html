@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Rhyno EV</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+    <header>
+         <!-- <img src="menulogo2.jpeg"> -->
+          <h1>RHYNO</h1>
+
+         <input type="checkbox" id="menu-bar">
+         <label for="menu-bar">Menu</label>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="About Us.html">ABOUT US</a></li>
+                <li><a href="#">PRODUCTS +</a>
+                <ul>
+                    <li><a href="SE03 Lite.html">SE03 Lite</a>
+                        <li><a href="SE03.html">SE03</a>
+                            <li><a href="SE03 Max.html">SE03 Max</a>
+                                <li><a href="comparison.html">Compare All</a>
+                </ul></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+                <li><a href="prebook.html">PRE-BOOK NOW</a></li>
+                <div class="social"><a 
+                    href="https://www.instagram.com/rhyno.in/?igsh=Mng5YnI3MWxtOWJx" target="_blank">
+              <i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <div class="social"><a
+                href="https://www.linkedin.com/company/rhyno-wheels/"  target="_blank">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            </div>
+
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="contact-container" id="contact-container">
+        <h1>Contact Us</h1>
+        <div class="contact-info">
+            <p><i class="fa fa-envelope" aria-hidden="true"></i>
+                <strong>Mail:</strong> 
+                <a href="mailto:info@rhyno.in">info@rhyno.in</a></p>
+            <p><i class="fa fa-phone-square" aria-hidden="true"></i>
+            <strong>Mobile no:</strong> <a href="tel:+919023987528">+91-9023987528</a></p>
+            <p><i class="fa fa-map-marker" aria-hidden="true"></i>
+                <strong>Location:</strong> Rhyno Wheels Private Limited,<br>
+                Near UG hostel gate #2, Behind PDEU,<br>
+                Raisan, Gandhinagar, Gujarat, India.
+            </p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const container = document.getElementById('contact-container');
+            setTimeout(() => {
+                container.classList.add('show');
+            }, 500);
+        });
+    </script>
+</body>
+</html>
